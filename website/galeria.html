@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Nome desta Página-->
+    <title>Galeria</title>
+
+    <!-- Script necessário para correr o código nos web browsers mais utilizados-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+
+    <!-- Chamar as definiçoes de estilo desta página-->
+    <link href="galeria.css" rel="stylesheet">
+</head>
+<body>
+    <!--Inicio da criação da Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./destinos.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acerca.html">Acerca</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Fim  da criação da Navbar-->
+
+
+    <!--indicadores das imagens-->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 6" data-bs-slide-to="5" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 7" data-bs-slide-to="6" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 8" data-bs-slide-to="7" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 9" data-bs-slide-to="8" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 10" data-bs-slide-to="9" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 11" data-bs-slide-to="10" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 12" data-bs-slide-to="11" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 13" data-bs-slide-to="12" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 14" data-bs-slide-to="13" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 15" data-bs-slide-to="14" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 16" data-bs-slide-to="15" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 17" data-bs-slide-to="16" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 18" data-bs-slide-to="17" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 19" data-bs-slide-to="18" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 20" data-bs-slide-to="19" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 21" data-bs-slide-to="20" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 22" data-bs-slide-to="21" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 23" data-bs-slide-to="22" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 24" data-bs-slide-to="23" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 25" data-bs-slide-to="24" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 26" data-bs-slide-to="25" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 27" data-bs-slide-to="26" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 28" data-bs-slide-to="27" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 29" data-bs-slide-to="28" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 30" data-bs-slide-to="29" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 31" data-bs-slide-to="30" data-bs-target="#carouselExampleIndicators" type="button"></button>
+        </div>
+        <!--Fim dos indicadores das imagens-->
+        <!--id das imagens-->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <!--Imagem do castelo/palácio 1-->
+                <img alt="..." class="d-block w-100" src="./images/img5.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Frederiksborg, Dinamarca</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast1.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 2-->
+                <img alt="..." class="d-block w-100" src="./images/img6.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo de Edimburgo, Escócia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast2.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 3-->
+                <img alt="..." class="d-block w-100" src="./images/img7.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Neuschwanstein, Alemanha</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast3.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 4-->
+                <img alt="..." class="d-block w-100" src="./images/img8.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Glamis, Escócia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast4.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 5-->
+                <img alt="..." class="d-block w-100" src="./images/img9.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo de Windsor, Inglaterra</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast5.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 6-->
+                <img alt="..." class="d-block w-100" src="./images/img10.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Chambord, França</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast6.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 7-->
+                <img alt="..." class="d-block w-100" src="./images/img11.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Palácio Mysore, Índia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast7.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 8-->
+                <img alt="..." class="d-block w-100" src="./images/img12.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo de Praga, República Checa</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast8.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 9-->
+                <img alt="..." class="d-block w-100" src="./images/img13.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo de Saint Michel, França</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast9.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 10-->
+                <img alt="..." class="d-block w-100" src="./images/img14.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Palácio da Pena, Portugal</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast10.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 11-->
+                <img alt="..." class="d-block w-100" src="./images/img15.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s"> Castelo Eltz, Alemanha</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast11.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 12-->
+                <img alt="..." class="d-block w-100" src="./images/img16.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Eilean Donan, Escócia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast12.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 13-->
+                <img alt="..." class="d-block w-100" src="./images/img17.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Bran, Romênia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast13.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 14-->
+                <img alt="..." class="d-block w-100" src="./images/img18.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Palácio Potala, Tibete </h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast14.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 15-->
+                <img alt="..." class="d-block w-100" src="./images/img19.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo do Monte, Itália </h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast15.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 16-->
+                <img alt="..." class="d-block w-100" src="./images/img20.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Alhambra, Espanha</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast16.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 17-->
+                <img alt="..." class="d-block w-100" src="./images/img21.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Grand Palace, Tailândia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast17.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 18-->
+                <img alt="..." class="d-block w-100" src="./images/img22.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo de Suscinio, França</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast18.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 19-->
+                <img alt="..." class="d-block w-100" src="./images/img23.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Malbork, Polónia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast19.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 20-->
+                <img alt="..." class="d-block w-100" src="./images/img24.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo da Ilha Trakai, Lituânia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast20.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 21-->
+                <img alt="..." class="d-block w-100" src="./images/img25.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Bojnice, Eslováquia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast21.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 22-->
+                <img alt="..." class="d-block w-100" src="./images/img26.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Hohenwerfen, Áustria</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast22.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 23-->
+                <img alt="..." class="d-block w-100" src="./images/img27.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Corvin, Romênia</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast23.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 24-->
+                <img alt="..." class="d-block w-100" src="./images/img28.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Hluboká, República Checa</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast24.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 25-->
+                <img alt="..." class="d-block w-100" src="./images/img29.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Doorwerth, Holanda</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast25.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 26-->
+                <img alt="..." class="d-block w-100" src="./images/img30.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Alcázar de Segóvia, Espanha</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast26.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 27-->
+                <img alt="..." class="d-block w-100" src="./images/img31.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Catedral de Milão, Itália</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast27.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 28-->
+                <img alt="..." class="d-block w-100" src="./images/img32.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo de Coca, Espanha</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast28.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 29-->
+                <img alt="..." class="d-block w-100" src="./images/img33.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo Muiderslot, Holanda </h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast29.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 30-->
+                <img alt="..." class="d-block w-100" src="./images/img34.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelo De Haar, Holanda</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast30.html">Ver informação</a></p>
+                </div>
+            </div>
+            <div class="carousel-item">
+
+                <!--Imagem do castelo/palácio 31-->
+                <img alt="..." class="d-block w-100" src="./images/img35.jpg">
+                <div class="carousel-caption">
+
+                    <!--Nome do castelo/palácio e a sua localização-->
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Torre de Belém, Portugal</h5>
+
+                    <!--Chamar a página do castelo/palácio em questão-->
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./cast31.html">Ver informação</a></p>
+                </div>
+            </div>
+        </div>
+        <!--Fim do id das imagens-->
+
+    </div>
+    <div>
+        <!-- Criação dos botões de Página Seguinte e  de Página Anterior-->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+        <!-- Fim da criação dos botões de Página Seguinte e de Página Anterior-->
+
+        <!-- Script necessário para correr o código nos web browsers mais utilizados-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+        <script>src = "script.js"</script>
+    </div>
+</body>
+</html>

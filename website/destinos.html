@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Nome desta Página-->
+    <title>Destinos</title>
+
+    <!-- Script necessário para correr o código nos web browsers mais utilizados-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Chamar as definiçoes de estilo desta página-->
+    <link href="destinos.css" rel="stylesheet">
+</head>
+<!-- Imagem de fundo desta página-->
+<body style="background-image: url(images/img4.jpg); background-size:cover;">
+
+    <!--Inicio da criação da Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./destinos.html">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./acerca.html">Acerca</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Fim da criação da Navbar-->
+
+    <!--indicadores das filas-->
+    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
+        <div class="carousel-indicators">
+            <button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 5" data-bs-slide-to="4" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 6" data-bs-slide-to="5" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 7" data-bs-slide-to="6" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 8" data-bs-slide-to="7" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 9" data-bs-slide-to="8" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 10" data-bs-slide-to="9" data-bs-target="#carouselExampleIndicators" type="button"></button>
+            <button aria-label="Slide 11" data-bs-slide-to="10" data-bs-target="#carouselExampleIndicators" type="button"></button>
+        </div>
+        <!--Fim dos indicadores das filas-->
+
+    <!-- Criação do carousel de cards-->
+    <div id="page"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <!-- Criação do carousel-->
+                <div class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Criação da primeira fila de cards-->
+                        <div class="carousel-item active">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 1-->
+                                        <div class="card" style="width:300px;margin:auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img5.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Frederiksborg</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Dinamarca</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast1.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 1-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 2-->
+                                        <div class="card" style="width:300px;margin:auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img6.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo de Edimburgo</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Escócia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast2.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 2-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 3-->
+                                        <div class="card" style="width:300px;margin:auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img7.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Neuschwanstein</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Alemanha</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast3.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim da criação da card do castelo/palácio 3-->
+                                </div>
+                            </div>
+                            <!-- Fim da criação da primeira fila de cards-->
+                        </div>
+                        <!-- Criação da segunda fila de cards-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 4-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img8.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Glamis</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Escócia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast4.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 4-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 5-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img9.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo de Windsor</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Inglaterra</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast5.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 5-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 6-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img10.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Chambord</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">França</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast6.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 6-->
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da segunda fila de cards-->
+                        </div>
+                        <!-- Criação da terceira fila de cards-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 7-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img11.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Palácio Mysore</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Índia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast7.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 7-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 8-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img12.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo de Praga</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">República Checa</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast8.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 8-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 9-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img13.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo de Saint Michel</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">França</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast9.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim da criação da card do castelo/palácio 9-->
+                                </div>
+                            </div>
+                            <!-- Fim da criação da terceira fila de cards-->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Criação da quarta fila de cards-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 10-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img14.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Palácio da Pena</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Portugal</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast10.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 10-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 11-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img15.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Eltz</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Alemanha</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast11.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 11-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 12-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img16.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Eilean Donan</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Escócia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast12.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim da criação da card do castelo/palácio 12-->
+                                </div>
+                            </div>
+                            <!-- Fim da criação da quarta fila de cards-->
+                        </div>
+                        <!-- Criação da quinta fila de cards-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 13-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img17.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Bran</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Romênia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast13.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 13-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 14-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img18.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Palácio Potala</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Tibete</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast14.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!-- Fim da criação da card do castelo/palácio 14-->
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 15-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img19.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo do Monte</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Itália</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast15.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim da criação da card do castelo/palácio 15-->
+                                </div>
+                            </div>
+                            <!-- Fim da criação da quinta fila de cards-->
+                        </div>
+                        <!-- Criação da sexta fila de cards-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 16-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img20.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Alhambra</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Espanha</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast16.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 16-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 17-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img21.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Grand Palace</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Tailândia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast17.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 17-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 18-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img22.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo de Suscinio</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">França</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast18.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 18-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da sexta fila de cards-->
+                        </div>
+                        <!-- Criação da sétima fila de cards-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 19-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img23.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Malbork</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Polónia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast19.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 19-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 20-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img24.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo da Ilha Trakai</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Lituânia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast20.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 20-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 21-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img25.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Bojnice</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Eslováquia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast21.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 21-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da sétima fila de cards-->
+                        </div>
+                        <!-- Criação da oitava fila de cards-->
+                        <div class="carousel-item">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 22-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img26.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Hohenwerfen</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Áustria</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast22.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 22-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 23-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img27.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Corvin</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Romênia</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast23.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 23-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 24-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img28.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Hluboká</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">República Checa</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast24.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 25-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da oitava fila de cards-->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Criação da nona fila de cards-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 25-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img29.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Doorwerth</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Holanda</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast25.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 26-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 26-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img30.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Alcázar de Segóvia</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Espanha</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast26.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 27-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 27-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img31.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Catedral de Milão</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Itália</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast27.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 28-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da nona fila de cards-->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Criação da décima décima fila de cards-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 28-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img32.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo de Coca</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Espanha</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast28.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 29-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 29-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img33.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo Muiderslot</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Holanda</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast29.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 30-->
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 30-->
+                                        <div class="card" style="width: 300px; margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img34.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Castelo De Haar</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Holanda</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast30.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                            <!-- Fim da criação da card do castelo/palácio 31-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da décima fila de cards-->
+                        </div>
+                        <div class="carousel-item">
+                            <!-- Criação última fila de cards-->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 col-lg-4">
+                                        <!-- Criação da card do castelo/palácio 31-->
+                                        <div class="card" style="width: 300px;margin: auto;">
+                                            <!--Imagem do castelo/palácio em questão-->
+                                            <img src="./images/img35.jpg" class="card-img-top castles">
+                                            <div class="card-body">
+                                                <!--Nome do castelo/palácio-->
+                                                <h4 class="card-title" style="text-align:center">Torre de Belém</h4>
+                                                <!-- A sua localização-->
+                                                <p class="card-text" style="text-align:center">Portugal</p>
+                                                <!--Criação do botão que redireciona para a página detalhada do castelo/palácio-->
+                                                <a class="btn btn-outline-dark btn-lg" style="display:flex; justify-content: space-evenly;" href="./cast31.html">
+                                                    Ver
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Fim da criação da última fila de cards-->
+                        </div>
+                    </div>
+                </div>
+                <!-- Fim da criação do carousel de imagens-->
+            </div>
+        <!-- Criação dos botões de Página Seguinte e  de Página Anterior-->
+        <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button>
+        <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
+        <!-- Fim da criação dos botões de Página Seguinte e de Página Anterior-->
+        </div>
+
+        <!-- Script necessário para correr o código nos web browsers mais utilizados-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+        <script>src = "script.js"</script>
+    </div>
+</body>
+</html>
