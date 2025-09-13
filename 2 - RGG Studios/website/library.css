@@ -1,6 +1,7 @@
 * {
     font-family: 'PT Sans Caption', sans-serif;
 }
+
 .castles {
     height: 20vh;
 }
@@ -9,42 +10,31 @@
     height: 40vh;
 }
 
-.carousel-indicators{
-    margin-bottom: 700px;
-
+.carousel-indicators {
+    margin-bottom: 20px; /* Adjusted value */
 }
+
 .btn-outline-dark {
     background-color: rgb(239, 239, 239);
     text-align: center;
 }
 
-
 .container-fluid {
-    align-items: stretch;
+    display: flex; /* Changed from align-items to display */
+    align-items: center; /* Added to center vertically */
     justify-content: space-around;
-    padding: 250px;
+    padding: 0 20px; /* Adjusted padding */
 }
-
 
 .bg-light {
     background-color: transparent !important;
 }
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    width: 250px;
-    height: 80px;
-    margin-bottom: 500px;
-}
-
-.carousel-control-prev {
-    opacity: 1 !important;
-    filter: invert(100%);
-
-}
-
-.carousel-control-next {
-    opacity: 1 !important;
-    filter: invert(100%);
+    width: 30px; /* Adjusted width */
+    height: 30px; /* Adjusted height */
+    margin-bottom: 20px; /* Adjusted margin */
 }
 
 .carousel-item {
@@ -96,12 +86,13 @@
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
-
 }
 
-navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
-     color: #fff;
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #fff;
 }
+
 .navbar .nav-item {
     margin-left: 24px;
     color: #fff;
@@ -124,11 +115,11 @@ navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
     transition: all 0.5s ease;
     transform: scale(0);
     color: #fff;
- }
+}
 
 .navbar .nav-item .nav-link.active::before,
 .navbar .nav-item .nav-link:hover::before {
-            transform: scale(1);
+    transform: scale(1);
 }
 
 .navbar-toggler {

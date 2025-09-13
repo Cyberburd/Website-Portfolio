@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
 
     <!-- Nome desta Página-->
-    <title>Home</title>
+    <title>Ryu Ga Gotoku Studio</title>
 
     <!-- Script necessário para correr o código nos web browsers mais utilizados-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,29 +16,32 @@
 
     <!-- Chamar as definiçoes de estilo desta página-->
     <link href="home.css" rel="stylesheet">
+
 </head>
 <body>
     <!--Inicio da criação da Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./destinos.html">Destinos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./galeria.html">Galeria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./acerca.html">Acerca</a>
-                    </li>
-                </ul>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./home.html">RGG Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./library.html">Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <!--Fim  da criação da Navbar-->
 
     <!--Criação dos indicadores de slides-->
@@ -49,37 +52,36 @@
             <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
             <button aria-label="Slide 4" data-bs-slide-to="3" data-bs-target="#carouselExampleIndicators" type="button"></button>
         </div>
-    <!--Fim da criação dos indicadores de slides-->
-
+        <!--Fim da criação dos indicadores de slides-->
 
         <!--Criação dos slides que contêm as páginas iniciais do projeto-->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img alt="..." class="d-block w-100" src="./images/img1.jpg">
+                <img alt="..." class="d-block w-100" src="./images/img1.png">
                 <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Castelos</h5>
-                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">Os Castelos e Palácios mais famosos do mundo!</p>
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Ryu Ga Gotoku Studio</h5>
+                    <p class="animated bounceInLeft d-none d-md-block" style="animation-delay: 2s">The Studio responsible for your favorite games!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img alt="..." class="d-block w-100" src="./images/img4.jpg">
+                <img alt="..." class="d-block w-100" src="./images/img4.png">
                 <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Destinos</h5>
-                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./destinos.html">Onde pretende ir?</a></p>
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Library of Games</h5>
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./library.html">Look up all the games made by RGG Studio</a></p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img alt="..." class="d-block w-100" src="./images/img2.jpg">
                 <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Galeria</h5>
-                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./galeria.html">Ver imagens de Castelos e de Palácios</a></p>
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Gallery</h5>
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./gallery.html">See all the trailers and key art for each game</a></p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img alt="..." class="d-block w-100" src="./images/img3.jpg">
+                <img alt="..." class="d-block w-100" src="./images/img3.png">
                 <div class="carousel-caption">
-                    <h5 class="animated bounceInRight" style="animation-delay: 1s">Acerca</h5>
-                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./acerca.html">Saiba mais sobre nós</a></p>
+                    <h5 class="animated bounceInRight" style="animation-delay: 1s">About</h5>
+                    <p class="animated bounceInRight" style="animation-delay: 2s"><a href="./about.html">Get to know more about the studio!</a></p>
                 </div>
                 <!--Fim da criação dos slides que contêm as páginas iniciais do projeto-->
 
@@ -88,14 +90,20 @@
             <button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button>
             <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
             <!-- Fim da criação dos botões de Página Seguinte e de Página Anterior-->
-
-            <!-- Script necessário para correr o código nos web browsers mais utilizados-->
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-            <script>src = "script.js"</script>
         </div>
     </div>
+
+    <!-- Script necessário para correr o código nos web browsers mais utilizados-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script>
+        // Initialize carousel and set interval for automatic sliding
+        $(document).ready(function() {
+            $('#carouselExampleIndicators').carousel({
+                interval: 9000 // 9 seconds
+            });
+        });
+    </script>
 </body>
 </html>
-
